@@ -83,8 +83,7 @@ Ghidra script directory.
 ## Configuration
 
 All target-specific values live in
-[`config/analysis.config.json`](config/analysis.config.json). No firmware name,
-DR address, or MMIO bound is hard-coded in the script anymore.
+[`config/analysis.config.json`](config/analysis.config.json). 
 
 ```jsonc
 {
