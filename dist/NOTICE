@@ -1,0 +1,46 @@
+HALIXOR
+Copyright (c) 2024-2026 HALIXOR authors
+
+This project includes and modifies code from the following third-party
+projects:
+
+1) QtRE — A Ghidra headless analyzer tailored for Qt binary analysis
+   Copyright (c) OSUSecLab (The Ohio State University Security Lab)
+   Licensed under the Apache License, Version 2.0
+   https://github.com/OSUSecLab/QtRE
+
+   Local modifications (relative to upstream main, 2024-10-07):
+     * Main/Decompiler.java
+     * Taint/QTaintEngine.java
+     * Taint/TaintPath.java
+     * Util/AddressUtil.java
+     * Util/FunctionUtil.java
+     * Util/NumericUtil.java
+     * Util/PCodeUtil.java
+   The full diff is available at patch/qtre-local-changes.patch.
+
+   Please cite the QtRE paper when building research or products on top of it:
+   Haohuang Wen and Zhiqiang Lin, "Egg Hunt in Tesla Infotainment: A First Look
+   at Reverse Engineering of Qt Binaries", 32nd USENIX Security Symposium
+   (USENIX Security 23), Anaheim, CA, August 2023.
+   https://www.usenix.org/conference/usenixsecurity23/presentation/wen
+
+2) Ghidra — National Security Agency
+   Licensed under the Apache License, Version 2.0
+   https://ghidra-sre.org/
+
+3) JSON-java (org.json) — Public Domain
+   https://github.com/stleary/JSON-java
+
+4) javafx.util.Pair — derived from OpenJFX
+   Licensed under GPL-2.0 with the Classpath exception
+   https://github.com/openjdk/jfx
+
+Benchmark firmware images bundled under dist/benchmarks/ are test data from
+third-party research projects (hal-fuzz, HALucinator, P2IM, uEmu, AWS
+FreeRTOS); see README.md for the upstream references and license guidance.
+
+Distributed under the Apache License, Version 2.0 (see the LICENSE file at the
+repository root). Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.

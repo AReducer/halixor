@@ -1,0 +1,7 @@
+# HALIXOR run artifacts
+output/
+.user-home/
+
+# macOS copy artifacts
+._*
+.DS_Store

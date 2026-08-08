@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "analysis": {
+    "output_dir": "output",
+    "mmio_min": "0x40000000",
+    "mmio_max": "0x60000000",
+    "mmio_base_mask": "0xFFFFFF00"
+  },
+  "targets": [
+    {
+      "program": "st-plc.bin",
+      "description": "ST-PLC (hal-fuzz benchmark)",
+      "language": "ARM:LE:32:Cortex",
+      "data_registers": [
+        { "address": "0x4001300c", "peripheral": "SPI" },
+        { "address": "0x40004404", "peripheral": "USART1" },
+        { "address": "0x40011004", "peripheral": "USART2" }
+      ]
+    },
+    {
+      "program": "hal-uart.bin",
+      "description": "ST-UART (HALucinator benchmark)",
+      "language": "ARM:LE:32:Cortex",
+      "data_registers": [
+        { "address": "0x40011004", "peripheral": "UART" }
+      ]
+    },
+    {
+      "program": "Robot.bin",
+      "description": "Robot (P2IM benchmark)",
+      "language": "ARM:LE:32:Cortex",
+      "data_registers": [
+        { "address": "0x40005410", "peripheral": "I2C" }
+      ]
+    },
+    {
+      "program": "Drone.bin",
+      "description": "Drone (P2IM benchmark)",
+      "language": "ARM:LE:32:Cortex",
+      "data_registers": [
+        { "address": "0x40005410", "peripheral": "I2C" },
+        { "address": "0x40013804", "peripheral": "USART" }
+      ]
+    },
+    {
+      "program": "Soldering_Iron.bin",
+      "description": "Soldering Iron (P2IM benchmark)",
+      "language": "ARM:LE:32:Cortex",
+      "data_registers": [
+        { "address": "0x40005410", "peripheral": "I2C" }
+      ]
+    },
+    {
+      "program": "uEmu.LiteOS_IoT.bin",
+      "description": "LiteOS IoT (uEmu benchmark)",
+      "language": "ARM:LE:32:Cortex",
+      "data_registers": [
+        { "address": "0x40004424", "peripheral": "UART" }
+      ]
+    },
+    {
+      "program": "jobs.bin",
+      "description": "Jobs (Amazon FreeRTOS benchmark)",
+      "language": "ARM:LE:32:Cortex",
+      "data_registers": [
+        { "address": "0x40003c0c", "peripheral": "SPI" }
+      ]
+    }
+  ]
+}

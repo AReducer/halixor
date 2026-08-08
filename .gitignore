@@ -1,0 +1,18 @@
+# HALIXOR run artifacts
+output/
+.user-home/
+
+# macOS copy artifacts
+._*
+.DS_Store
+
+# Local workspace trees not part of this repository
+# (the publishable content is at the repository root; dist/ is the
+# self-contained bundle)
+ai-gen/
+ConstantPropaTest.java
+firmware-benchmarks/
+ghidra_11.2.1_PUBLIC/
+halixor/
+halixor.pdf
+halixor.tar.gz
